@@ -5,8 +5,10 @@ const prevBtn = document.getElementById("prev");
 const title = document.getElementById("title");
 const cover = document.getElementById("cover");
 const artist = document.getElementById("artist");
-
-
+const volumeSlider = document.getElementById("volume");
+const progress = document.getElementById("progress-container");
+const currentTimeEl = document.getElementById("current-time");
+const durationEl = document.getElementById("duration");
 
 const songs = [
     {
@@ -61,3 +63,13 @@ prevBtn.addEventListener("click", function() {
     playBtn.textContent = "Pause";
 }
 );
+
+/* Volume control */
+audio.volume = volumeSlider.value;
+
+volumeSlider.addEventListener("input", function() {
+    audio.volume = this.value;
+});
+
+/* Progress bar */
+
