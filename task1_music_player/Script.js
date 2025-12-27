@@ -10,26 +10,28 @@ const progress = document.getElementById("progress-container");
 const currentTimeEl = document.getElementById("current-time");
 const durationEl = document.getElementById("duration");
 
+
 const songs = [
     {
         title:"Jingle Bells",
         artist:"Steve Juke",
-        cover:"assets/Covers/Christmas1.jpg",
-        audio:"assets/songs/Christmas1.mp3"
+        cover:"/assets/covers/christmas1.jpg",
+        audio:"/assets/songs/christmas1.mp3"
     },
     {
         title:"Merry Christmas",
         artist:"James Lord Pierpont",
-        cover:"assets/Covers/Christmas2.jpg",
-        audio:"assets/songs/Christmas2.mp3"
+        cover:"/assets/covers/christmas2.jpg",
+        audio:"/assets/songs/christmas2.mp3"
     },
     {
         title:"Merry Christmas",
         artist:"James Lord Pierpont",
-        cover:"assets/Covers/Christmas3.jpg",
-        audio:"assets/songs/Christmas3.mp3"
+        cover:"/assets/covers/christmas3.jpg",
+        audio:"/assets/songs/christmas3.mp3"
     }
 ];
+
 
 let currentSongIndex = 0;
 loadSong(currentSongIndex);
