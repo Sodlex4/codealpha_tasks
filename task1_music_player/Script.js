@@ -13,7 +13,7 @@ const durationEl = document.getElementById("duration");
 const songs = [
     {
         title:"Jingle Bells",
-        artist:"James",
+        artist:"Steve Juke",
         cover:"assets/Covers/Christmas1.jpg",
         audio:"assets/songs/Christmas1.mp3"
     },
